@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+     
+
+
+  <definition name="sitebaselayout" template="/WEB-INF/layout/wesitebaselayout.jsp">
+      <put-attribute name="title"  value="template title"/>
+      <put-attribute name="content"   value="template content"/>
+  </definition>
+
+  <definition name="index" extends="sitebaselayout">
+                  <put-attribute name="title"  value="index|Page"/>
+                    <put-attribute name="content"   value="/WEB-INF/view/website/index.jsp"/>
+  </definition>
+ 
+   <definition name="login" extends="sitebaselayout">
+                  <put-attribute name="title"  value="Login|Page"/>
+                    <put-attribute name="content"   value="/WEB-INF/view/website/login.jsp"/>
+  </definition>
+ 
+
+ 
+ <definition name="about" extends="sitebaselayout">
+                  <put-attribute name="title"  value="About|Page"/>
+                    <put-attribute name="content"   value="/WEB-INF/view/website/about.jsp"/>
+  </definition>
+  
+  <definition name="services" extends="sitebaselayout">
+                  <put-attribute name="title"  value="services|Page"/>
+                    <put-attribute name="content"   value="/WEB-INF/view/website/services.jsp"/>
+  </definition>
+ 
+ <definition name="contact" extends="sitebaselayout">
+                  <put-attribute name="title"  value="contact|Page"/>
+                    <put-attribute name="content"   value="/WEB-INF/view/website/contact.jsp"/>
+  </definition>
+ 
+ <definition name="camerabasic" extends="sitebaselayout">
+                  <put-attribute name="title"  value="camerabasic|Page"/>
+                    <put-attribute name="content"   value="/WEB-INF/view/website/camerabasic.jsp"/>
+  </definition>
+ 
+ 
+</tiles-definitions>
